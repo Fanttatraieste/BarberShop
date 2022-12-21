@@ -1,8 +1,39 @@
 :root {
+  --brand-color: #ff6c00;
+  --white-color: #ffffff;
+  --subtitle-black-color: #303030;
+  --paragraph-color-black: #555555;
+  --paragraph-color-white: #9da4bd;
+  --subtitle-white-color: rgba(157, 164, 189, 0.6);
 }
 body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.unstyled-list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }
 
 /* Stilizare header */
-
+.nav-link,
+.contact-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33px;
+  color: var(--white-color);
+}
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:active,
+.contact-link:focus {
+  color: var(--brand-color);
+}
 /* Sfarsit stilizare header */
