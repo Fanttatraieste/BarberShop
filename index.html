@@ -11,7 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <header>
+    <!-- Header -->
+    <header class="header-class">
       <a class="link" href="index.html">
         <img src="images/LogoBarber.png" alt="Logoul Frizeriei" />
       </a>
@@ -39,15 +40,17 @@
       </ul>
     </header>
     <main>
-      <section>
-        <h4>A hair salon for men in Kyiv</h4>
-        <h1>BarberShop</h1>
-        <p>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h4 class="hero-subtitle">A hair salon for men in Kyiv</h4>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-text">
           We are experts in trendy men's haircuts. We work quickly, carefully
           and with style.
         </p>
       </section>
-      <section>
+      <!-- About Section -->
+      <section class="about-section">
         <img
           width="300"
           src="images/BeardStyles/Style1.jpg"
@@ -58,13 +61,13 @@
           src="images/BeardStyles/Style2.jpg"
           alt="Beard Style two"
         />
-        <h4>About</h4>
-        <h2>Best Barbershop in your city</h2>
-        <p>
+        <h4 class="about-subtitle">About</h4>
+        <h2 class="about-title">Best Barbershop in your city</h2>
+        <p class="about-text1">
           If you want to add more confidence to your image, you should
           definitely visit us.
         </p>
-        <p>
+        <p class="about-text2">
           We are a team that never stops at what has been achieved and are
           thirsty for changes. And when you fall into the hands of our master,
           you will never be the same again. We are a team that is always "on the
@@ -73,69 +76,91 @@
         </p>
         <button type="button">Online-booking</button>
       </section>
-      <section>
-        <h4>Spend your time with the best masters</h4>
-        <h2>Services and prices</h2>
-        <ul class="unstyled-list">
-          <li>
-            <p>Men's haircut</p>
-            <p>from 300 uah</p>
-          </li>
-          <li>
-            <p>Beard trim</p>
-            <p>from 300 uah</p>
-          </li>
-          <li>
-            <p>Mustache trim</p>
-            <p>from 200 uah</p>
-          </li>
-          <li>
-            <p>Straight razor shave</p>
-            <p>from 200 uah</p>
-          </li>
-        </ul>
-        <ul class="unstyled-list">
-          <li>
-            <p>Trainee's haircut</p>
-            <p>from 50 uah.</p>
-          </li>
-          <li>
-            <p>Haircut under the nozzle</p>
-            <p>from 200 uah.</p>
-          </li>
-          <li>
-            <p>Children's haircut (0-12 y.o.)</p>
-            <p>from 300 uah.</p>
-          </li>
-          <li>
-            <p>Camouflage of gray hair</p>
-            <p>from 200 uah.</p>
-          </li>
-        </ul>
+      <!-- Services section -->
+      <section class="services-section">
+        <h4 class="services-subtitle">Spend your time with the best masters</h4>
+        <h2 class="services-title">Services and prices</h2>
+        <div>
+          <ul class="unstyled-list">
+            <li>
+              <p class="services-text">Men's haircut</p>
+              <p class="services-text">from 300 uah</p>
+            </li>
+            <li>
+              <p class="services-text">Beard trim</p>
+              <p class="services-text">from 300 uah</p>
+            </li>
+            <li>
+              <p class="services-text">Mustache trim</p>
+              <p class="services-text">from 200 uah</p>
+            </li>
+            <li>
+              <p class="services-text">Straight razor shave</p>
+              <p class="services-text">from 200 uah</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="unstyled-list">
+            <li>
+              <p class="services-text">Trainee's haircut</p>
+              <p class="services-text">from 50 uah.</p>
+            </li>
+            <li>
+              <p class="services-text">Haircut under the nozzle</p>
+              <p class="services-text">from 200 uah.</p>
+            </li>
+            <li>
+              <p class="services-text">Children's haircut (0-12 y.o.)</p>
+              <p class="services-text">from 300 uah.</p>
+            </li>
+            <li>
+              <p class="services-text">Camouflage of gray hair</p>
+              <p class="services-text">from 200 uah.</p>
+            </li>
+          </ul>
+        </div>
         <button type="button">Online-booking</button>
       </section>
+      <!-- Comercial section -->
       <section>
         <ul class="unstyled-list">
           <li>
-            <h2>600<sup>+</sup></h2>
-            <p>Satisfied customers per day</p>
+            <div class="comercial-box">
+              <h2 class="comercial-numbers">
+                600<sup><span class="plus">+</span></sup>
+              </h2>
+              <p class="comercial-text">Satisfied customers per day</p>
+            </div>
           </li>
           <li>
-            <h2>20<sup>+</sup></h2>
-            <p>Kyiv's best barbers</p>
+            <div class="comercial-box">
+              <h2 class="comercial-numbers">
+                20<sup><span class="plus">+</span></sup>
+              </h2>
+              <p class="comercial-text">Kyiv's best barbers</p>
+            </div>
           </li>
           <li>
-            <h2>50<sup>+</sup></h2>
-            <p>Awards for excellent service</p>
+            <div class="comercial-box">
+              <h2 class="comercial-numbers">
+                50<sup><span class="plus">+</span></sup>
+              </h2>
+              <p class="comercial-text">Awards for excellent service</p>
+            </div>
           </li>
           <li>
-            <h2>100<sup>+</sup></h2>
-            <p>Gifts for regular customers</p>
+            <div class="comercial-box">
+              <h2 class="comercial-numbers">
+                100<sup><span class="plus">+</span></sup>
+              </h2>
+              <p class="comercial-text">Gifts for regular customers</p>
+            </div>
           </li>
         </ul>
-        <h4>Old traditional school</h4>
-        <h2>¿Why people come to us?</h2>
-        <p>
+        <h4 class="comercial-subtitle">Old traditional school</h4>
+        <h2 class="comercial-title">¿Why people come to us?</h2>
+        <p class="comercial-text2">
           Only good things are said about us. But it's better to see and feel 1
           time than read 10 times.
         </p>
@@ -199,17 +224,19 @@
         <ul class="unstyled-list">
           <li>
             <a
-              class="link"
+              class="link contact-link"
               href="https://goo.gl/maps/ZL8GriiBfxLYy5f1A"
               target="_blank"
               >st. Vasilkovaya, 7A Kiev, 08132</a
             >
           </li>
           <li>
-            <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <a class="link contact-link" href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
           </li>
           <li>
-            <a class="link" href="mailto:barbershop@email.com"
+            <a class="link contact-link" href="mailto:barbershop@email.com"
               >barbershop@email.com</a
             >
           </li>

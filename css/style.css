@@ -1,0 +1,154 @@
+:root {
+  --brand-color: #ff6c00;
+  --white-color: #ffffff;
+  --subtitle-black-color: #303030;
+  --paragraph-color-black: #555555;
+  --paragraph-color-white: #9da4bd;
+  --subtitle-white-color: rgba(157, 164, 189, 0.6);
+  --black-color: black;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 1.66;
+}
+.unstyled-list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* Stilizare header */
+.header-class {
+  background-color: var(--black-color);
+}
+.nav-link,
+.contact-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33px;
+  color: var(--white-color);
+}
+.nav-link:hover,
+.nav-link:active,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:active,
+.contact-link:focus {
+  color: var(--brand-color);
+}
+
+/* Hero section */
+.hero-section {
+  background-color: var(--subtitle-black-color);
+}
+.hero-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--subtitle-white-color);
+}
+.hero-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+.hero-text {
+  color: var(--paragraph-color-white);
+}
+
+/* About section */
+.about-section {
+}
+.about-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--subtitle-black-color);
+}
+.about-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--subtitle-black-color);
+}
+.about-text1 {
+  color: var(--paragraph-color-black);
+}
+.about-text2 {
+  color: var(--paragraph-color-black);
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+/* Services section */
+.services-section {
+  background-color: var(--black-color);
+}
+.services-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--paragraph-color-white);
+}
+.services-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+
+.services-text {
+  color: var(--paragraph-color-white);
+}
+/* Comercial section */
+
+.comercial-box {
+  color: #f7f7f7;
+}
+.comercial-numbers {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  color: var(--subtitle-black-color);
+}
+.comercial-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--subtitle-black-color);
+}
+.plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  color: var(--brand-color);
+}
+.comercial-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--subtitle-black-color);
+}
+.comercial-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--subtitle-black-color);
+}
+.comercial-text2 {
+  color: var(--paragraph-color-black);
+}
