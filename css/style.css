@@ -152,3 +152,80 @@ body {
 .comercial-text2 {
   color: var(--paragraph-color-black);
 }
+/* Barbers */
+.barbers {
+}
+.barbers-subheading {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--subtitle-black-color);
+}
+.barbers-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--subtitle-black-color);
+}
+
+.barbers-names {
+  font-size: 18px;
+  line-height: 1.38;
+  color: var(--subtitle-black-color);
+}
+.barbers-job {
+  font-size: 14px;
+  line-height: 1.35;
+  color: var(--brand-color);
+}
+/* Contacts */
+.contacts {
+  background-color: var(--black-color);
+}
+.contacts-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+}
+.contacts-booking-formular {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+.contacts-booking-formular:hover,
+.contacts-booking-formular:active,
+.contacts-booking-formular:focus {
+  color: var(--white-color);
+}
+.contacts-link,
+.contacts-text {
+  font-weight: 700;
+  color: var(--paragraph-color-white);
+}
+.contacts-subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--white-color);
+}
+/* Footer */
+.footer-page {
+  background-color: #f7f7f7;
+}
+.footer-copyright,
+.footer-social-media {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: #9da4bd;
+}
+.footer-social-media {
+  color: var(--subtitle-black-color);
+}
