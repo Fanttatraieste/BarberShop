@@ -65,9 +65,10 @@ body {
 }
 .hero-header-section {
   display: flex;
-  border: 2px solid red;
+  border: 2px solid purple;
   background-color: var(--black-color);
-  width: 1070px;
+  /*width: 1070px;*/
+  width:90%;
   height: 680px;
   margin-right: 100px;
   flex-direction: column;
