@@ -65,7 +65,7 @@
     <main>
       <!-- About Section -->
       <section class="about-section-container">
-        <img
+        <img class="about-image"
           width="270"
           src="images/BeardStyles/Style1.jpg"
           alt="Beard Style one"
@@ -170,7 +170,7 @@
               <p class="text">Gifts for regular customers</p>
           </li>
         </ul>
-        <div>
+        <div class="comercial-text">
           <h4 class="subtitle">Old traditional school</h4>
           <h2 class="title">¿Why people come to us?</h2>
           <p class="text">
@@ -180,54 +180,56 @@
         </div>
       </section>
       <!-- Barbers section -->
-      <section>
-        <h4>For true enjoyers of the atmosphere</h4>
-        <h2>Our barbers</h2>
-        <ul>
-          <li>
-            <img width="200" src="images/barbers/John.jpg" alt="John" />
-            <p>John Smith</p>
-            <p>Extreme Barber</p>
-          </li>
-          <li>
-            <img width="200" src="images/barbers/Michele.jpg" alt="Michele" />
-            <p>Michele Doe</p>
-            <p>Extreme Barber</p>
-          </li>
-          <li>
-            <img width="200" src="images/barbers/Alan.jpg" alt="Alan" />
-            <p>Alan Black</p>
-            <p>Extreme Barber</p>
-          </li>
-        </ul>
+      <section class="barbers-container">
+        <h4 class="subtitle">For true enjoyers of the atmosphere</h4>
+        <h2 class="title">Our barbers</h2>
+        <div>
+          <ul class="barbers-list">
+            <li class="barbers-list-item">
+              <img width="370" src="images/barbers/John.jpg" alt="John" />
+              <p class="barbers-name">John Smith</p>
+              <p class="barbers-ocupation">Extreme Barber</p>
+            </li>
+            <li class="barbers-list-item">
+              <img width="370" src="images/barbers/Michele.jpg" alt="Michele" />
+              <p class="barbers-name">Michele Doe</p>
+              <p class="barbers-ocupation">Extreme Barber</p>
+            </li>
+            <li class="barbers-list-item">
+              <img width="370" src="images/barbers/Alan.jpg" alt="Alan" />
+              <p class="barbers-name">Alan Black</p>
+              <p class="barbers-ocupation">Extreme Barber</p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <h4>In Latin, "barba" means "beard"</h4>
-        <ul>
+      <section class="barbers-pictures-container">
+        <h4 class="subtitle">In Latin, "barba" means "beard"</h4>
+        <ul class="barbers-pictures-list unstyled-list">
           <li>
             <img
-              width="200"
+              width="270"
               src="images/work/work1.jpg"
               alt="First work picture"
             />
           </li>
           <li>
             <img
-              width="200"
+              width="270"
               src="images/work/work2.jpg"
               alt="Second work picture"
             />
           </li>
           <li>
             <img
-              width="200"
+              width="270"
               src="images/work/work3.jpg"
               alt="Third work picture"
             />
           </li>
           <li>
             <img
-              width="200"
+              width="270"
               src="images/work/work4.jpg"
               alt="Forth work picture"
             />
@@ -235,48 +237,53 @@
         </ul>
       </section>
       <!-- Contacts -->
-      <section>
-        <div>
-          <h2>Online-booking</h2>
-          <ul>
-            <li>Name<sup>*</sup></li>
-            <li>Phone<sup>*</sup></li>
-            <li>Message</li>
+      <section class="contacts-container">
+        <div class="booking-container">
+          <h2 class="title">Online-booking</h2>
+          <ul class="booking-form unstyled-list">
+            <li class="text">Name<sup>*</sup></li>
+            <li class="text">Phone<sup>*</sup></li>
+            <li class="text">Message</li>
           </ul>
-          <button type="button">send</button>
+          <button class="button-nav" type="button">send</button>
         </div>
-        <div>
-          <h2>Contacts</h2>
-          <ul class="unstyled-list">
+        <div class="links-container">
+          <h2 class="title">Contacts</h2>
+          <ul class="unstyled-list links-container-contact-list">
             <li>
               <a
-                class="link"
+                class="link contact-item"
                 href="https://goo.gl/maps/ZL8GriiBfxLYy5f1A"
                 target="_blank"
                 >st. Vasilkovaya, 7A Kiev, 08132</a
               >
             </li>
             <li>
-              <a class="link" href="tel:+380441111111"
+              <a class="link contact-item" href="tel:+380441111111"
                 >+38 044 111 11 11</a
               >
             </li>
             <li>
-              <a  class="link" href="mailto:barbershop@email.com"
+              <a  class="link contact-item email" href="mailto:barbershop@email.com"
                 >barbershop@email.com</a
               >
             </li>
           </ul>
-          <h4>Working hours</h4>
-          <p>Every day from 9:00 to 22:00</p>
+          <h4 class="subtitle">Working hours</h4>
+          <p class="text">Every day from 9:00 to 22:00</p>
         </div>
       </section>
     </main>
     <!-- Footer Page -->
-    <footer>
-      <p>&#169 Copyright 2020</p>
-      <p>Instagram</p>
-      <p>Youtube</p>
+    <footer class="footer-container">
+      <div class="copyright-container">
+        <p class="copyright-text">&#169 Copyright 2020</p>
+      </div>
+      <div class="footer-social-media">
+        <a class="social-media-link link" href="https://www.instagram.com/eusuntdorian/" target="_blank">Instagram</a>
+        <a class="social-media-link link" href="https://www.youtube.com/@DorianPopaHatz" target="_blank">Youtube</a>
+      </div>
+      
     </footer>
   </body>
 </html>

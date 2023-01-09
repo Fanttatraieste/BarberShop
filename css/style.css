@@ -33,6 +33,7 @@ body {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
+  color:var(--subtitle-black-color);
 }
 .text {
   color: var(--paragraph-color-black);
@@ -70,7 +71,7 @@ body {
   /*width: 1070px;*/
   width:90%;
   height: 680px;
-  margin-right: 100px;
+  margin-right: auto;
   flex-direction: column;
 }
 .logo-container {
@@ -78,7 +79,7 @@ body {
   border: 2px solid orangered;
   flex-direction: column;
   /*flex-basis: 155px;*/
-  margin-left: 160px;
+  margin-left: auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -187,10 +188,18 @@ body {
   flex-direction: row;
   gap: 30px;
   padding-top: 120px;
-  border: 2px solid red;
-  margin-left: 160px;
-  margin-right: 100px;
+  /*border: 2px solid red;*/
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 120px;
+}
+
+.about-image{
+  margin-left:auto;
+}
+
+.about-text-container{
+  margin-right:auto;
 }
 
 .about-section-container .title,
@@ -269,18 +278,19 @@ body {
 /* Comercial section */
 .comercial-container {
   display: flex;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   flex-direction: row;
-  margin-left: 160px;
-  margin-right: 100px;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
+  width:1170px;
 }
 .comercial-item1 {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
   margin-bottom: 175px;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   margin-right: 30px;
   padding: 0px;
   margin-left: 100px;
@@ -290,7 +300,7 @@ body {
   flex-direction: column;
   margin-top: 175px;
   margin-bottom: 100px;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   margin-right: 130px;
   padding: 0px;
 }
@@ -299,13 +309,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid blue;
-  margin-bottom: 30px;
+  /*border: 2px solid blue;*/
   background-color: #f7f7f7;
   width: 170px;
-  height: 133px;
+  /*height: 133px;*/
 }
 
+.comercial-list-item:first-child{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.comercial-list-item .text{
+  max-width: 122px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color:var(--subtitle-black-color);
+}
 .plus-item {
   color: var(--brand-color);
   font-weight: 600;
@@ -316,10 +338,198 @@ body {
 .comercial-container .title {
   line-height: 1.35;
 }
-.comercial-container .text {
-  color: var(--subtitle-black-color);
+
+
+.comercial-text .title{
+  max-width: 430px;
+}
+
+.comercial-text .text{
+  max-width: 500px;
+  color:var(--paragraph-color-black);
+}
+
+/* Barbers section */
+.barbers-container{
+  background-color: #F7F7F7;
+  display:flex;
+  flex-direction: column;
+
+}
+
+.barbers-container .subtitle{
+  margin-top:120px;
+  margin-bottom: 20px;
+  border:2px solid green;
+  text-align:left;
+}
+
+.barbers-container .title{
+  margin-bottom: 44px;
+  border:2px solid black;
+  text-align:left;
+}
+
+.barbers-list{
+  display: flex;
+  flex-direction: row;
+  gap:30px;
+  border:2px solid red;
+  margin-bottom: 130px;
+}
+
+.barbers-list-item{
+  display: flex;
+  flex-direction: column;
+}
+.barbers-list-item:first-child{
+  margin-left: auto;
+}
+.barbers-list-item:last-child{
+  margin-right: auto;
+}
+
+.barbers-name{
+  text-align: center;
+  color:var(--subtitle-black-color);
+  line-height: 1.38;
+}
+.barbers-ocupation{
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.35;
+  color:var(--brand-color);
+}
+/* Barbers pictures */
+.barbers-pictures-container{
+  display:flex;
+  flex-direction: column;
+  border:2px solid black;
+}
+
+.barbers-pictures-container .subtitle{
+  margin-top:120px;
+}
+
+.barbers-pictures-list{
+  display:flex;
+  gap:30px;
+  margin-top:44px;
+  margin-bottom: 120px;
+  border:2px solid red;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* Contacts */
+.contacts-container{
+  display:flex;
+}
+.booking-container{
+  display:flex;
+  background-color: #191C26;
+  border:2px solid red;
+  width:50%;
+  height:634px;
+  flex-direction: column;
+}
+.links-container{
+  display:flex;
+  background-color: black;
+  border:2px solid white;
+  width:50%;
+  height:634px;
+  flex-direction:column;
+}
+
+.booking-form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  border:2px solid green;
+  margin-left:200px;
+}
+
+.booking-container .title{
+  color:var(--white-color);
+  margin-top:130px;
+  margin-left:200px;
+}
+.booking-container .text{
+  color:rgba(157, 164, 189, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin-right:200px;
+}
+.booking-container .text:hover,
+.booking-container .text:active,
+.booking-container .text:focus{
+  cursor: pointer;
+  color : var(--white-color);
+}
+
+.booking-container .button-nav{
+  margin-left:200px;
+  margin-right:auto;
+}
+
+.links-container-contact-list{
+  margin-left:100px;
+  display:flex;
+  flex-direction: column;
+}
+
+.links-container .title{
+  color:var(--white-color);
+  margin-left:100px;
+}
+.contact-item{
+  font-weight: 700;
+  color: #9DA4BD;
+}
+
+.links-container .subtitle{
+  color:var(--white-color);
+  margin-left:100px;
+}
+
+.links-container .text{
+  color: #9DA4BD;
+  margin-left:100px;
+}
+
+.email{
+  text-decoration-line: underline;
+}
+/* Footer */
+.footer-container{
+  display:flex;
+  flex-direction: row;
+}
+
+.copyright-container{
+  display:flex;
+  flex-basis:50%;
+  margin-top:56px;
+  margin-bottom:56px;
+  flex-direction: row;
+}
+
+.copyright-text{
+  margin-left:215px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  text-align: center;
+  color:var(--paragraph-color-white);
+}
+
+.footer-social-media{
+  display:flex;
+  flex-basis: 50%;
+  margin-top:56px;
+  margin-bottom:56px;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-right:180px;
 }
