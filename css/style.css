@@ -18,6 +18,12 @@ body {
   list-style-type: none;
 }
 
+.rectangle {
+  width: 1px;
+  height: 60px;
+  transform: rotate(90deg);
+}
+
 .link {
   text-decoration: none;
 }
@@ -33,7 +39,7 @@ body {
   font-size: 42px;
   line-height: 1.16;
   letter-spacing: 0.05em;
-  color:var(--subtitle-black-color);
+  color: var(--subtitle-black-color);
 }
 .text {
   color: var(--paragraph-color-black);
@@ -62,21 +68,20 @@ body {
 /* Hero-Header stilization */
 .header-container {
   display: flex;
-  border: 2px solid green;
 }
 .hero-header-section {
   display: flex;
-  border: 2px solid purple;
-  background-color: var(--black-color);
+  background-image: url("../images/background/hero-background.jpg");
   /*width: 1070px;*/
-  width:90%;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 680px;
   margin-right: auto;
   flex-direction: column;
 }
 .logo-container {
   display: flex;
-  border: 2px solid orangered;
   flex-direction: column;
   /*flex-basis: 155px;*/
   margin-left: auto;
@@ -86,7 +91,6 @@ body {
 .social-media {
   display: flex;
   flex-direction: row;
-  border: 2px solid green;
   transform: rotate(-90deg);
   margin-bottom: 140px;
   justify-content: space-around;
@@ -94,7 +98,6 @@ body {
 }
 .principal-navigation {
   display: flex;
-  border: 2px solid blue;
   /*flex-basis: 1070px;*/
   padding-top: 45px;
   margin-right: 0px;
@@ -102,7 +105,6 @@ body {
 }
 .header-navigation {
   display: flex;
-  border: 2px solid red;
   margin-left: 80px;
   gap: 30px;
   flex-direction: row;
@@ -110,7 +112,6 @@ body {
 }
 .contact-list {
   display: flex;
-  border: 2px solid yellow;
   gap: 40px;
   flex-direction: row;
   padding-right: 20px;
@@ -118,7 +119,6 @@ body {
 }
 .hero-text-container {
   display: flex;
-  border: 2px solid white;
   flex-direction: column;
   margin-top: 50px;
 }
@@ -158,20 +158,19 @@ body {
   letter-spacing: 0.05em;
   color: var(--white-color);
   display: flex;
-  border: 2px solid green;
   margin-left: 80px;
 }
 .hero-text-container .subtitle {
   color: var(--subtitle-white-color);
   display: flex;
-  border: 2px solid yellow;
   margin-bottom: 10px;
   margin-left: 80px;
+  padding-bottom: 0px;
 }
 .hero-text-container .text {
   color: var(--paragraph-color-white);
   display: flex;
-  border: 2px solid red;
+
   margin-top: 10px;
   margin-left: 80px;
   max-width: 370px;
@@ -194,12 +193,12 @@ body {
   padding-bottom: 120px;
 }
 
-.about-image{
-  margin-left:auto;
+.about-image {
+  margin-left: auto;
 }
 
-.about-text-container{
-  margin-right:auto;
+.about-text-container {
+  margin-right: auto;
 }
 
 .about-section-container .title,
@@ -223,14 +222,13 @@ body {
 /* Services Section */
 .services-container {
   display: flex;
-  background-color: var(--black-color);
-  border: 2px solid purple;
+  background-image: url("../images/background/services-background.jpg");
+  /*border: 2px solid purple;*/
   flex-direction: column;
 }
 
 .services-container .subtitle {
   color: var(--subtitle-white-color);
-  margin-top: 120px;
 }
 .services-container .title {
   color: var(--white-color);
@@ -239,18 +237,25 @@ body {
   color: var(--paragraph-color-white);
 }
 
+.align-services {
+  border: 2px solid black;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .services-prices {
   display: flex;
   border: 2px solid red;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: space-around;
 }
 
 .services-left-prices,
 .services-right-prices {
   display: flex;
   border: 2px solid green;
-  max-width: 570px;
+  max-width: 770px;
   flex-direction: column;
 }
 
@@ -266,13 +271,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 2px solid white;
+  /* border: 2px solid white;*/
   margin-bottom: 20px;
   margin-right: 20px;
 }
 .services-container .button-nav {
   margin-bottom: 120px;
-  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Comercial section */
@@ -283,7 +289,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-  width:1170px;
+  width: 1170px;
 }
 .comercial-item1 {
   display: flex;
@@ -315,18 +321,18 @@ body {
   /*height: 133px;*/
 }
 
-.comercial-list-item:first-child{
+.comercial-list-item:first-child {
   margin-bottom: 30px;
   text-align: center;
 }
 
-.comercial-list-item .text{
+.comercial-list-item .text {
   max-width: 122px;
   text-align: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  color:var(--subtitle-black-color);
+  color: var(--subtitle-black-color);
 }
 .plus-item {
   color: var(--brand-color);
@@ -339,197 +345,199 @@ body {
   line-height: 1.35;
 }
 
-
-.comercial-text .title{
+.comercial-text .title {
   max-width: 430px;
 }
 
-.comercial-text .text{
+.comercial-text .text {
   max-width: 500px;
-  color:var(--paragraph-color-black);
+  color: var(--paragraph-color-black);
 }
 
 /* Barbers section */
-.barbers-container{
-  background-color: #F7F7F7;
-  display:flex;
-  flex-direction: column;
-
-}
-
-.barbers-container .subtitle{
-  margin-top:120px;
-  margin-bottom: 20px;
-  border:2px solid green;
-  text-align:left;
-}
-
-.barbers-container .title{
-  margin-bottom: 44px;
-  border:2px solid black;
-  text-align:left;
-}
-
-.barbers-list{
+.barbers-container {
+  background-color: #f7f7f7;
   display: flex;
-  flex-direction: row;
-  gap:30px;
-  border:2px solid red;
+  flex-direction: column;
+}
+
+.barbers-align {
+  margin-top: 120px;
   margin-bottom: 130px;
-}
-
-.barbers-list-item{
-  display: flex;
-  flex-direction: column;
-}
-.barbers-list-item:first-child{
   margin-left: auto;
-}
-.barbers-list-item:last-child{
   margin-right: auto;
 }
 
-.barbers-name{
+.barbers-container .subtitle {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.barbers-container .title {
+  margin-bottom: 44px;
+  text-align: left;
+}
+
+.barbers-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+
+.barbers-list-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+}
+
+.barbers-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.barbers-name {
   text-align: center;
-  color:var(--subtitle-black-color);
+  color: var(--subtitle-black-color);
   line-height: 1.38;
 }
-.barbers-ocupation{
+.barbers-ocupation {
   text-align: center;
   font-size: 14px;
   line-height: 1.35;
-  color:var(--brand-color);
+  color: var(--brand-color);
 }
 /* Barbers pictures */
-.barbers-pictures-container{
-  display:flex;
+.barbers-pictures-container {
+  display: flex;
   flex-direction: column;
-  border:2px solid black;
 }
 
-.barbers-pictures-container .subtitle{
-  margin-top:120px;
-}
-
-.barbers-pictures-list{
-  display:flex;
-  gap:30px;
-  margin-top:44px;
+.barbers-pictures-align {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
   margin-bottom: 120px;
-  border:2px solid red;
-  margin-left:auto;
-  margin-right:auto;
+  padding: 0px;
+}
+
+.barbers-pictures-list {
+  display: flex;
+  margin-top: 44px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.align-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Contacts */
-.contacts-container{
-  display:flex;
+.contacts-container {
+  display: flex;
 }
-.booking-container{
-  display:flex;
-  background-color: #191C26;
-  border:2px solid red;
-  width:50%;
-  height:634px;
+.booking-container {
+  display: flex;
+  background-color: #191c26;
+  border: 2px solid red;
+  width: 50%;
+  height: 634px;
   flex-direction: column;
 }
-.links-container{
-  display:flex;
-  background-color: black;
-  border:2px solid white;
-  width:50%;
-  height:634px;
-  flex-direction:column;
+.links-container {
+  display: flex;
+  background-image: url("../images/background/contacts-background.jpg");
+  width: 50%;
+  height: 634px;
+  flex-direction: column;
 }
 
-.booking-form{
+.booking-form {
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
-  border:2px solid green;
-  margin-left:200px;
+  flex-wrap: wrap;
+  border: 2px solid green;
+  margin-left: 200px;
 }
 
-.booking-container .title{
-  color:var(--white-color);
-  margin-top:130px;
-  margin-left:200px;
+.booking-container .title {
+  color: var(--white-color);
+  margin-top: 130px;
+  margin-left: 200px;
 }
-.booking-container .text{
-  color:rgba(157, 164, 189, 0.4);
+.booking-container .text {
+  color: rgba(157, 164, 189, 0.4);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 600;
-  margin-right:200px;
+  margin-right: 200px;
 }
 .booking-container .text:hover,
 .booking-container .text:active,
-.booking-container .text:focus{
+.booking-container .text:focus {
   cursor: pointer;
-  color : var(--white-color);
+  color: var(--white-color);
 }
 
-.booking-container .button-nav{
-  margin-left:200px;
-  margin-right:auto;
+.booking-container .button-nav {
+  margin-left: 200px;
+  margin-right: auto;
 }
 
-.links-container-contact-list{
-  margin-left:100px;
-  display:flex;
+.links-container-contact-list {
+  margin-left: 100px;
+  display: flex;
   flex-direction: column;
 }
 
-.links-container .title{
-  color:var(--white-color);
-  margin-left:100px;
+.links-container .title {
+  color: var(--white-color);
+  margin-left: 100px;
 }
-.contact-item{
+.contact-item {
   font-weight: 700;
-  color: #9DA4BD;
+  color: #9da4bd;
 }
 
-.links-container .subtitle{
-  color:var(--white-color);
-  margin-left:100px;
+.links-container .subtitle {
+  color: var(--white-color);
+  margin-left: 100px;
 }
 
-.links-container .text{
-  color: #9DA4BD;
-  margin-left:100px;
+.links-container .text {
+  color: #9da4bd;
+  margin-left: 100px;
 }
 
-.email{
+.email {
   text-decoration-line: underline;
 }
 /* Footer */
-.footer-container{
-  display:flex;
+.footer-container {
+  display: flex;
   flex-direction: row;
 }
 
-.copyright-container{
-  display:flex;
-  flex-basis:50%;
-  margin-top:56px;
-  margin-bottom:56px;
+.copyright-container {
+  display: flex;
+  flex-basis: 50%;
+  margin-top: 56px;
+  margin-bottom: 56px;
   flex-direction: row;
 }
 
-.copyright-text{
-  margin-left:215px;
+.copyright-text {
+  margin-left: 215px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  color:var(--paragraph-color-white);
+  color: var(--paragraph-color-white);
 }
 
-.footer-social-media{
-  display:flex;
+.footer-social-media {
+  display: flex;
   flex-basis: 50%;
-  margin-top:56px;
-  margin-bottom:56px;
+  margin-top: 56px;
+  margin-bottom: 56px;
   justify-content: flex-end;
   gap: 40px;
-  margin-right:180px;
+  margin-right: 180px;
 }
