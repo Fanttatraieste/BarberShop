@@ -222,9 +222,19 @@ body {
 /* Services Section */
 .services-container {
   display: flex;
-  background-image: url("../images/background/services-background.jpg");
+  background-image: url("../images/background/services-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   /*border: 2px solid purple;*/
   flex-direction: column;
+}
+
+.services-line {
+  position: relative;
+  top: 38px;
+  margin-right: 12px;
+  margin-left: 12px;
+  color: rgba(157, 164, 189, 0.12);
 }
 
 .services-container .subtitle {
@@ -262,9 +272,19 @@ body {
 .services-left-prices {
   margin-left: auto;
   margin-right: 50px;
+  background-color: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
 }
 .services-right-prices {
   margin-right: auto;
+  background-color: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 
 .services-item {
@@ -433,10 +453,14 @@ body {
 /* Contacts */
 .contacts-container {
   display: flex;
+  background-color: #191c26;
+  background-image: url("../images/background/contacts-background.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .booking-container {
   display: flex;
-  background-color: #191c26;
+
   border: 2px solid red;
   width: 50%;
   height: 634px;
@@ -444,7 +468,8 @@ body {
 }
 .links-container {
   display: flex;
-  background-image: url("../images/background/contacts-background.jpg");
+
+  background-repeat: no-repeat;
   width: 50%;
   height: 634px;
   flex-direction: column;
@@ -491,6 +516,7 @@ body {
 .links-container .title {
   color: var(--white-color);
   margin-left: 100px;
+  margin-top: 130px;
 }
 .contact-item {
   font-weight: 700;
