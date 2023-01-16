@@ -176,10 +176,27 @@ body {
   max-width: 370px;
 }
 
+.hero-text-container > .subtitle > svg {
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+}
+
 /* About section */
 .about-paragraph {
   font-size: 14px;
   line-height: 1.85;
+}
+
+.about-text-container > .subtitle > svg {
+  position: relative;
+  bottom: 3px;
+  margin-right: 20px;
+}
+
+.social-media > svg {
+  position: relative;
+  top: 5px;
 }
 
 .about-section-container {
@@ -248,7 +265,6 @@ body {
 }
 
 .align-services {
-  border: 2px solid black;
   margin-top: 120px;
   margin-bottom: 50px;
   margin-left: auto;
@@ -257,14 +273,13 @@ body {
 
 .services-prices {
   display: flex;
-  border: 2px solid red;
+
   justify-content: space-around;
 }
 
 .services-left-prices,
 .services-right-prices {
   display: flex;
-  border: 2px solid green;
   max-width: 770px;
   flex-direction: column;
 }
@@ -299,6 +314,18 @@ body {
   margin-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.align-services > .subtitle > svg {
+  margin-right: 20px;
+  margin-bottom: 3px;
+}
+
+.services-item > svg {
+  position: relative;
+  top: 38px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 /* Comercial section */
@@ -374,6 +401,12 @@ body {
   color: var(--paragraph-color-black);
 }
 
+.comercial-text > .subtitle > svg {
+  margin-right: 20px;
+  position: relative;
+  bottom: 3px;
+}
+
 /* Barbers section */
 .barbers-container {
   background-color: #f7f7f7;
@@ -408,6 +441,8 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .barbers-list-item:not(:last-child) {
@@ -425,6 +460,41 @@ body {
   line-height: 1.35;
   color: var(--brand-color);
 }
+.barbers-align > .subtitle > svg {
+  position: relative;
+  bottom: 3px;
+  margin-right: 20px;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  width: 44px;
+  height: 44px;
+  color: var(--subtitle-black-color);
+}
+
+.social-link:hover {
+  color: var(--brand-color);
+}
+
 /* Barbers pictures */
 .barbers-pictures-container {
   display: flex;
@@ -448,6 +518,12 @@ body {
 
 .align-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.barbers-pictures-align > .subtitle > svg {
+  position: relative;
+  bottom: 3px;
+  margin-right: 20px;
 }
 
 /* Contacts */
@@ -481,6 +557,10 @@ body {
   flex-wrap: wrap;
   border: 2px solid green;
   margin-left: 200px;
+}
+
+.booking-form > .text > svg {
+  color: currentColor;
 }
 
 .booking-container .title {
@@ -566,4 +646,9 @@ body {
   justify-content: flex-end;
   gap: 40px;
   margin-right: 180px;
+}
+
+.footer-social-media > svg {
+  position: relative;
+  top: 5px;
 }
