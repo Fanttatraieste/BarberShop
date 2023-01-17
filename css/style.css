@@ -72,7 +72,7 @@ body {
 .hero-header-section {
   display: flex;
   background-image: url("../images/background/hero-background.jpg");
-  /*width: 1070px;*/
+  flex-basis: 1070px;
   width: 80%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,10 +83,12 @@ body {
 .logo-container {
   display: flex;
   flex-direction: column;
-  /*flex-basis: 155px;*/
   margin-left: auto;
   justify-content: space-between;
   align-items: center;
+  flex-basis: 150px;
+  position: relative;
+  left: 50px;
 }
 .social-media {
   display: flex;
@@ -96,6 +98,7 @@ body {
   justify-content: space-around;
   gap: 40px;
 }
+
 .principal-navigation {
   display: flex;
   /*flex-basis: 1070px;*/
