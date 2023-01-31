@@ -391,27 +391,12 @@
       <section class="contacts-container">
         <div class="booking-container">
           <h2 class="title">Online-booking</h2>
-          <ul class="booking-form unstyled-list">
-            <li class="text">
-              Name<sup>*</sup>
-              <svg  width="270" height="3">
-                <line x1="0" y1="2.5" x2="262.86" y2="2.5" stroke="rgba(157, 164, 189, 0.4)" stroke-width="1" />
-              </svg>
-            </li>
-            <li class="text">
-              Phone<sup>*</sup>
-              <svg  width="270" height="3">
-                <line x1="0" y1="2.5" x2="262.86" y2="2.5"stroke="rgba(157, 164, 189, 0.4)" stroke-width="1" />
-              </svg>
-            </li>
-            <li class="text">
-              Message
-              <svg  width="270" height="3">
-                <line x1="0" y1="2.5" x2="262.86" y2="2.5"stroke="rgba(157, 164, 189, 0.4)" stroke-width="1" />
-              </svg>
-            </li>
-          </ul>
-          <button class="button-nav" type="button">send</button>
+          <form class="booking-form" autocomplete="off">
+            <input type="text" name="name" placeholder="name*"/>
+            <input type="tel" name="phone" placeholder="phone*"/>
+            <textarea placeholder="message"></textarea>
+            <button class="button-nav" type="button">send</button>
+          </form>
         </div>
         <div class="links-container">
           <h2 class="title">Contacts</h2>
